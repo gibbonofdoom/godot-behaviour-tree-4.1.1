@@ -1,8 +1,10 @@
+@icon("res://BehaviourTree/icons/random-selector.png")
+
 extends Task
 
 # One randomly selected child must succeed
 
-class_name RandomSelector, "res://icons/random-selector.png"
+class_name RandomSelector
 
 var sequence
 var idx = 0
@@ -28,8 +30,8 @@ func child_fail():
 
 func cancel():
 	set_sequence()
-	.cancel()
+	super.cancel()
 
 func start():
 	set_sequence()
-	.start()
+	super.start()

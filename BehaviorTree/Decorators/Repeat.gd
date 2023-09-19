@@ -1,11 +1,13 @@
+@icon("res://BehaviourTree/icons/repeat.png")
+
 extends Task
 
 # Repeats the child Task and reports Success after repeating unless it fails
 
-class_name Repeat, "res://icons/repeat.png"
+class_name Repeat
 
 # Number of times to run or zero for infinite
-export(int) var LIMIT = 5
+@export var LIMIT : int = 5
 
 var count = 0
 var repeating = false
@@ -33,9 +35,9 @@ func child_fail():
 func start():
 	count = 0
 	repeating = false
-	.start()
+	super.start()
 
 func cancel():
 	count = 0
 	repeating = false
-	.cancel()
+	super.cancel()

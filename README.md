@@ -1,4 +1,6 @@
-# Godot Behaviour Tree
+# Godot Behaviour Tree updated to 4.1.1 from Andrew Wilkes project
+https://github.com/andrew-wilkes/godot-behaviour-tree
+
 Behaviour Tree framework for Godot coded in GDScript.
 
 A tutorial related to this code is here: [Godot Behaviour Tree](https://gdscript.com/godot-behaviour-tree)
